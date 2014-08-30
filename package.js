@@ -1,6 +1,8 @@
 Package.describe({
+  name: 'tap:http-methods',
   version: '0.0.23',
-    summary: 'Adds HTTP.methods RESTful'
+  summary: 'Adds HTTP.methods RESTful',
+  git: 'https://github.com/theosp/Meteor-http-methods'
 });
 
 Package.on_use(function(api) {
