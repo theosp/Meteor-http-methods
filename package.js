@@ -7,6 +7,9 @@ Package.describe({
 
 Package.on_use(function(api) {
   'use strict';
+
+  api.versionsFrom('METEOR@0.9.0');
+
   api.use(['webapp', 'underscore', 'ejson'], 'server');
 
   api.use('http', { weak: true });
@@ -21,7 +24,7 @@ Package.on_use(function(api) {
 });
 
 Package.on_test(function (api) {
-  api.use('http-methods', ['server']);
+  api.use('tap:http-methods', ['server']);
   api.use('test-helpers', 'server');
   api.use(['tinytest', 'underscore', 'ejson', 'ordered-dict',
            'random', 'deps']);
